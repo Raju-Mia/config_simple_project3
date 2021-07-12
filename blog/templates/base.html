@@ -14,8 +14,13 @@
 
 <body>
     <header>
-        <h1><a href="{% url 'home' %}">Home blog</a></h1> <br>
-        <h1><a href="#">&nbsp;&nbsp;Detail blog</a></h1>
+        <div class="nav-left">
+            <h1><a href="{% url 'home' %}">Home blog</a></h1> <br>
+        </div>
+        
+        <div class="nav-right">
+            <a href="{% url 'post_new' %}">New Blog Post</a>
+        </div>
         
     </header>
 
